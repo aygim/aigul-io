@@ -14,14 +14,18 @@
     </head>
     <body>
         <header>
-            <ul id="nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+            <div id="header">
+                <ul id="nav">
+                <li><a href="#myName">About</a></li>
+                <li><a href="#myExperience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#connect">Connect</a></li>
-              </ul> 
+               </ul> 
+            </div>
         </header>
         <main>
-            <h1><em> Aigul Stetchi</em> </h1>
+            <h1 id="myName"><em> Aigul Stetchi</em> </h1>
         
             <section id="about">
 
@@ -38,9 +42,9 @@
             <section id="myExperience">
                 <h2> My experience</h2>
                 <div id="experience-container">
-                    <div id="box1">
+                    <div class="experienceItem">
                         <h4>Sales and Marketing Manager</h4>
-                        <p id="years1">2015 August - 2018 September</p>
+                        <p id="years">2015 August - 2018 September</p>
                         <p id="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Etiam nec bibendum mauris. 
                             Curabitur quis vehicula leo. 
@@ -48,16 +52,18 @@
                             Quisque non feugiat diam, at vehicula leo.
                         </p>
                     </div>
-                    <div id="box2">
+
+                    <div class="experienceItem">
                         <h4>Specialist of Public Relations</h4>
-                        <p id="years2">2008 July - 2015 July</p>
+                        <p id="years">2008 July - 2015 July</p>
                         <p id="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec bibendum mauris. Curabitur quis vehicula leo. 
                             Vivamus leo ipsum, convallis at magna sit amet, blandit condimentum neque. 
                             Quisque non feugiat diam, at vehicula leo.</p>
                     </div>
-                    <div id="box3">
+
+                    <div class="experienceItem">
                         <h4>Sales and Marketing Manager</h4>
-                        <p id="years3">2015 August - 2018 September</p>
+                        <p id="years">2015 August - 2018 September</p>
                         <p id="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Etiam nec bibendum mauris. 
                             Curabitur quis vehicula leo. 
@@ -65,16 +71,24 @@
                             Quisque non feugiat diam, at vehicula leo.
                         </p>
                     </div>
-                </div>
+
+                </div><!--experience-cont-->
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
             </section>
         
         </main>
     </body>
-    <footer> 
-        <p>copyright Aigul Stetchi</p>
-        <div>
-        <a href="https://github.com/aygim" target="_blank">github</a>
-        <a href="mailto:stetchi.aigul@gmail.com" target="_blank">gmail</a>
-    </div>
+    <footer id="connect"> 
+            <p>copyright Aigul Stetchi</p>
+          <div id="connectLinks">
+              <a href="https://github.com/aygim" target="_blank">github</a>
+              <a href="mailto:stetchi.aigul@gmail.com" target="_blank">gmail</a>
+          </div>
     </footer>
 </html>
