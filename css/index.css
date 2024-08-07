@@ -64,23 +64,16 @@ width: 20%;
     float: left;
     padding-left: 35%;
 }
-/* main h2 {
-color: red;
-} */
+
 
 #about p {
 
     margin-bottom: 1rem;
     }
 #about {
-        /* width: 50%; */
     display: flex;
     
     }
-/* #about, #myExperience {
-padding: 1em; 
-        */
-
 
 a {
     color: #2b2b2b;
