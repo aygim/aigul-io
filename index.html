@@ -86,7 +86,28 @@
         
         </main>
         
-
+    <section>
+        <h2>Leave a Message</h2>
+        <form name = "leave_message">
+            <div class ="flex-container">
+                <label class ="flex-name" for = "usersName"> Name </label><br>
+                    <input type ="text" id = "usersName" name = "usersName" required>
+            </div>
+            <div class ="flex-container">
+                <label class ="flex-email" for = "usersEmail"> Email </label><br>
+                    <input type ="email" id = "usersEmail" name = "usersEmail" required>
+            </div>
+            <div class ="inputMessage">
+                <label class ="flex-message" for = "usersMessage"> Message </label><br>
+                <textarea name = "usersMessage" id = "usersMessage" required></textarea><br>
+            </div>
+            <button type = "submit"> Submit </button>
+        </form>
+    </section>
+    <section id = "messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
     <footer id="connect"> 
             <p>copyright Aigul Stetchi</p>
           <div id="connectLinks">
