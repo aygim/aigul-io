@@ -42,27 +42,10 @@ const removeButton = document.createElement('button');
     removeButton.type = 'button';
     removeButton.addEventListener('click', (e) => {
         entry.remove();
-//Hide the #messages section,
-
-        if (messageList.childElementCount === 0) {
-            messageSection.style.display = "none";
-        
-        }
     });
 
-
-//Create an "edit" button
-const editButton = document.createElement('button');
-editButton.innerText = 'edit';
-editButton.type = 'button';
-editButton.addEventListener('click', (e) => {
-    const updateMessages = prompt('Please edit your message');
-    let editedMessage = newMessage.querySelector ('span');
-    editedMessage.textContent = 'wrote: ${updateMessage}';
-});
   newMessage.appendChild(removeButton);
-  newMessage.appendChild(editButton);
   newMessage.appendChild(newMessage);
   messageSection.style.display = "block";
-  messageForm.requestFullscreen();
+  messageForm.reset();
 })
