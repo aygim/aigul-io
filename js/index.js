@@ -66,6 +66,8 @@ function updateMessageSectionDisplay() {
 const githubUsername = 'aygim';
 
 const url = `https://api.github.com/users/${aygim}/repos`;
+const githubUsername = 'aygim';
+const url = `https://api.github.com/users/${aygim}/repos`;
 
 //"GET" request using the Fetch API
 fetch(url)
