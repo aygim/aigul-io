@@ -63,3 +63,34 @@ function updateMessageSectionDisplay() {
     }
 }
 
+const githubUsername = 'aygim';
+
+const url = `https://api.github.com/users/${aygim}/repos`;
+
+//"GET" request using the Fetch API
+fetch(url)
+    .then(response => {
+        // Check if the response is successful
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        // Return the response JSON data
+        return response.json();
+    })
+    .then(data => {
+        const repositories = data;  
+
+        const projectSection = document.getElementById('projects');
+
+        const projectList = projectSection.querySelector('#project-list');
+
+        repositories.forEach(repo => {
+            const project = document.createElement('li');
+            project.innerText = repo.name;
+            projectList.appendChild(project);
+        });
+    })
+    .catch(error => {
+        // Handle errors from the fetch operation
+        console.error('There was a problem with the fetch operation:', error);
+    });
