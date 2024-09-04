@@ -40,12 +40,25 @@ newMessage.innerHTML = `<a href = "mailto:${email}"> ${userName} </a>
 const removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
     removeButton.type = 'button';
-    removeButton.addEventListener('click', (e) => {
-        entry.remove();
+    removeButton.addEventListener('click', () => {
+        newMessage.remove();
+        updateMessageSectionDisplay();
     });
 
   newMessage.appendChild(removeButton);
-  newMessage.appendChild(newMessage);
+  messageList.appendChild(newMessage);
   messageSection.style.display = "block";
   messageForm.reset();
+  updateMessageSectionDisplay();
 })
+
+function updateMessageSectionDisplay() {
+    const messageSection = document.getElementById("messages");
+    const messageList = messageSection.querySelector('ul');
+    
+    if (messageList.children.length === 0) {
+        messageSection.style.display = "none";
+    } else {
+        messageSection.style.display = "block";
+    }
+}
