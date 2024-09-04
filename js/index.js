@@ -23,22 +23,22 @@ messageForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const userName = e.target.usersName.value;
     const email = e.target.usersEmail.value;
-    const messages = e.target.usersMessage.value;
+    const messageContent = e.target.usersMessage.value;
     console.log("Name:", userName);
     console.log("Email:", email);
-    console.log("Message:", messages);
+    console.log("Message:", messageContent);
 
 
-//Display Messages in List
+//Display the new message in the list
 const messageSection = document.getElementById("messages");
 const messageList = messageSection.querySelector('ul');
 const newMessage = document.createElement ('li');
 newMessage.innerHTML = `<a href = "mailto:${email}"> ${userName} </a>
-<span>wrote: ${messages}</span>`;
+<span>wrote: ${messageContent}</span>`;
 
-//Remove button
+//Create and append the remove button
 const removeButton = document.createElement('button');
-    removeButton.innerText = 'remove';
+    removeButton.innerText = 'Remove';
     removeButton.type = 'button';
     removeButton.addEventListener('click', () => {
         newMessage.remove();
@@ -62,3 +62,4 @@ function updateMessageSectionDisplay() {
         messageSection.style.display = "block";
     }
 }
+

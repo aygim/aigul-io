@@ -24,11 +24,8 @@
                </ul> 
             </div>
         </header>
-        <main>
-            <!-- <h1 id="myName"><em>Aigul Stetchi</em></h1> -->
-        
+    <main>
             <section id="about">
-
                 <img src="./images/photo_2024-08-15_23-19-33.jpg" alt="my photo">
                 <div id="boxAbout">
                 <h1 id="myName">I'm Aigul Stetchi</h1>
@@ -77,37 +74,39 @@
             <section id="skills">
                 <h2>Skills</h2>
                 <ul>
-
+                      <!-- Skills content -->
                 </ul>
             </section>
+
             <section id="projects">
                 <h2>Projects</h2>
+                     <!-- Projects content -->
             </section>
-        
-        </main>
-        
-    <section>
+         
+    <section id="leaveMessage">
         <h2 id="leaveAmessage">Leave a Message</h2>
         <form name = "leave_message">
             <div class ="flex-container">
-                <label class ="flex-name" for = "usersName"> Name </label><br>
-                    <input type ="text" id = "usersName" name = "usersName" required>
+                <label class ="flex-name" for="usersName">Name</label><br>
+                    <input type ="text" id="usersName" name ="usersName" required>
             </div>
-            <div class ="flex-container">
-                <label class ="flex-email" for = "usersEmail"> Email </label><br>
-                    <input type ="email" id = "usersEmail" name = "usersEmail" required>
+            <div class="flex-container">
+                <label class="flex-email" for="usersEmail">Email</label><br>
+                <input type ="email" id ="usersEmail" name ="usersEmail" required>
             </div>
             <div class ="inputMessage">
-                <label class ="flex-message" for = "usersMessage"> Message </label><br>
-                <textarea name = "usersMessage" id = "usersMessage" required></textarea><br>
+                <label class ="flex-message" for="usersMessage">Message</label><br>
+                <textarea name ="usersMessage" id="usersMessage" required></textarea><br>
             </div>
-            <button type = "submit"> Submit </button>
+            <button type="submit">Submit</button>
         </form>
     </section>
-    <section id = "messages">
+    <section id ="messages">
         <h2>Messages</h2>
         <ul></ul>
     </section>
+    </main>
+
     <footer id="connect"> 
             <p>copyright Aigul Stetchi</p>
           <div id="connectLinks">
@@ -115,6 +114,7 @@
               <a href="mailto:stetchi.aigul@gmail.com" target="_blank">gmail</a>
           </div>
     </footer>
+
     <script src="js/index.js"></script>
     </body>
 </html>
