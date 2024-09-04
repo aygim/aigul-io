@@ -123,6 +123,60 @@ section{
     gap: 20px;
 }
 
+#leaveAmessage{
+    margin-bottom: 1em;
+    text-align: center;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form horizontally */
+    background: #f9f9f9;
+    padding: 3.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.flex-container label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#messages {
+    padding: 3.5rem;
+}
 
 footer {
     display: flex;
