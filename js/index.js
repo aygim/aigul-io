@@ -7,7 +7,7 @@ footer.appendChild(copyright);
 
 
 //add skills section
-const skills = ["JavaScript", "HTML", "CSS", "Adobe Photoshop", "GitHub"];
+const skills = ["JavaScript", "HTML", "CSS", "SQL" , "Adobe Photoshop", "GitHub"];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");
 for (let i = 0; i < skills.length; i++) {
