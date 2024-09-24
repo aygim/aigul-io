@@ -1,17 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: Lora-Regular, sans-serif;
     background-color: #fff;
     color: #2b2b2b;
     letter-spacing: .1em;
 }
+
 img {
     width: 100%;
     height: auto;
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -23,39 +26,40 @@ main {
 
 h2, h3, h4, h5, h6 {
     font-family: Ubuntu-Bold, sans-serif;
-    margin: 1em 0;
+    margin: 0 0 1em 0;
 }
+
 h1 {
     font-family: Ubuntu-Bold, sans-serif;
-margin-bottom: 1em;
+    margin-bottom: 1em;
 }
+
 h2 {
     font-size: 30px;
 }
+
 h4 {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #header {
-  width: 100%;
-  position: fixed;
-  background-color: #fff;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
 }
 
 #nav {
     display: flex;
     justify-content: space-between;
-    height: "180px";
     padding: 30px 150px;
     background-color: #fff;
-    
+
 }
 
 #boxAbout {
-    
-padding-left: 2em;
-width: 30%;
-    display: flex; 
+    padding-left: 2em;
+    width: 30%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 
@@ -63,38 +67,42 @@ width: 30%;
 
 #about img {
 
-    height: 30%; 
+    height: 30%;
     width: 30%;
     margin: 1em;
     float: left;
-   max-width: 400px;
+    max-width: 400px;
 }
 
 #about p {
     margin-bottom: 1rem;
-    }
+}
+
 #about {
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
-    }
+}
 
 a {
     color: #2b2b2b;
     text-transform: uppercase;
     text-decoration: none;
-    
+
 }
+
 ul {
     list-style-type: none;
     padding: 0;
 }
+
 p {
     color: #747474;
     line-height: 1.6;
-    
+
 }
+
 #experience-container {
 
     display: flex;
@@ -103,15 +111,22 @@ p {
     gap: 30px;
 }
 
-    
-section{
+section {
     width: 70%;
-    padding: 30px 0px;
- }
+}
+
+section::before {
+    content: "";
+    display: block;
+    height: 230px;
+    margin-top: -150px;
+    visibility: hidden;
+}
+
 .experienceItem {
     width: 100%;
     max-width: 500px;
-   
+
 }
 
 .years {
@@ -124,36 +139,55 @@ section{
     gap: 20px;
 }
 
-#skills {
-    padding: 30px 0; 
+#skills, #projects {
+    padding: 20px 0;
 }
 
 #skills ul {
-    padding: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
 }
 
 #skills li {
-    margin-bottom: 10px; 
-    font-size: 18px; 
-}
-
-#projects {
-    padding: 30px 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
 #project-list {
-    padding: 0; 
-    margin: 0; 
+    padding: 0;
+    margin: 0;
 }
 
 #project-list li {
-    margin-bottom: 15px; 
-    font-size: 18px; 
+    margin-bottom: 15px;
+    font-size: 18px;
 }
-#leaveAmessage{
-    margin-bottom: 1em;
+
+#leaveAmessage {
+    padding: 20px 0;
     text-align: center;
 }
+
+#messages {
+    display: none;
+    margin-bottom: 3.5rem;
+}
+
+#messages ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#messages span {
+    margin-right: 10px;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -171,7 +205,6 @@ form {
 
 .flex-container label {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -197,9 +230,8 @@ button {
     cursor: pointer;
 }
 
-
 a:hover {
-    color: #FF6F61; 
+    color: #FF6F61;
     text-decoration: underline;
 }
 
@@ -207,81 +239,85 @@ button:hover {
     background-color: #555;
 }
 
-#messages {
-    padding: 3.5rem;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
     padding: 30px 150px;
+    margin-top: 100px;
 }
+
 ::selection {
     background-color: #FFDAB9; /* Peach background color */
     color: #333; /* Text color when selected*/
 }
 
-
-
 @media (max-width: 1200px) {
     #boxAbout {
         width: 70%;
         padding-left: 0em;
-       }
-       #about {
-        gap: 20px;
-       }
-       #about img {
-        width: 40% ;
-       }
-       .experienceItem {
-        width: 100%;
-        max-width: max-content;  
     }
-     #experience-container {
+
+    #about {
+        gap: 20px;
+    }
+
+    #about img {
+        width: 40%;
+    }
+
+    .experienceItem {
+        width: 100%;
+        max-width: max-content;
+    }
+
+    #experience-container {
         flex-direction: column;
         width: 100%;
     }
 }
 
 @media (max-width: 900px) {
-#about {
-    flex-direction: column;
-align-items: center;
-   }
-   #boxAbout {
-    width: 100%;
-    padding-left: 0em;
-   }
-   #about img {
-    width: 70% ;
-   }
-}
-
-@media (max-width: 600px) {
-    main{
-        padding-top: 150px;
-    }
     #nav {
         flex-direction: column;
         gap: 8px;
         align-items: center;
     }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #boxAbout {
+        width: 100%;
+        padding-left: 0em;
+    }
+
+    #about img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-top: 150px;
+    }
+
     section {
         width: 85%;
+        padding: 0;
     }
-    
-   #boxAbout {
-    width: 100%;
-    padding-left: 0em;
-   }
-   #about img {
-    width: 70% ;
-   }
-   footer {
-    padding: 30px;
-   }
-   
+
+    #boxAbout {
+        width: 100%;
+        padding-left: 0em;
+    }
+
+    #about img {
+        width: 70%;
+    }
+
+    footer {
+        padding: 30px;
+    }
 }
-    
-/* border: 1px solid red; */
