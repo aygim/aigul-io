@@ -17,23 +17,19 @@ for (let i = 0; i < skills.length; i++) {
 }
 
 //Handle Message Form Submit
+const messageSection = document.getElementById("messages");
 const messageForm = document.querySelector('form[name = "leave_message"]');
 messageForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const userName = e.target.usersName.value;
     const email = e.target.usersEmail.value;
     const messageContent = e.target.usersMessage.value;
-    console.log("Name:", userName);
-    console.log("Email:", email);
-    console.log("Message:", messageContent);
-
 
     //Display the new message in the list
-    const messageSection = document.getElementById("messages");
     const messageList = messageSection.querySelector("ul");
     const newMessage = document.createElement("li");
-    newMessage.innerHTML = `<a href = "mailto:${email}"> ${userName} </a>
-<span>wrote: ${messageContent}</span>`;
+    newMessage.innerHTML = `<a href = "mailto:${email}"> ${userName}</a>
+<span> wrote: ${messageContent}</span>`;
 
 
     //Create and append the remove button
